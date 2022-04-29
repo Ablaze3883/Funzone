@@ -2,11 +2,14 @@ import React, { useState, useRef } from 'react'
 import { HiX } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 import HeroImg from '../assets/second.svg';
-import InspirationImg from '../assets/first.svg';
+import GeolocationImg from "../assets/first.svg"
+import InspirationImg from '../assets/hero.svg';
 
 export default function Home() {
 
     const [showCode, setShowCode] = React.useState(false);
+
+    // For ester eggs
     const ref = useRef(null);
 
     const [message, setMessage] = useState("");
@@ -26,15 +29,10 @@ export default function Home() {
             setValid(false);
             setMessage("Wrong code, keep trying");
         }
-        // else {
-        // setValid(false);
-        // setMessage("You lost, try again");
-        // }
-
     }
 
     return (
-        <div className="md:mx-28 mx-4 text-fontColor pt-8 md:pt-20 pb-12">
+        <div className="md:mx-28 mx-4 text-fontColor pt-8 md:pt-16 pb-12">
 
             <div className='md:grid md:grid-cols-2 items-center'>
                 <div className=''>
@@ -102,13 +100,30 @@ export default function Home() {
             <div className='md:grid md:grid-cols-2 items-center pt-16'>
 
                 <div className="grid place-items-center py-4 drop-shadow-3xl shadow-black">
-                    <img src={InspirationImg} alt="img" width="400" height="400" />
+                    <img src={GeolocationImg} alt="img" width="400" height="400" />
                 </div>
 
                 <div className=''>
-                    <h1 className='text-3xl md:text-6xl'>What else do <span className='text-blue-600 cursor-pointer' onDoubleClick={() => setShowCode(true)}>we</span> have</h1>
-                    <p className='text-xl md:text-2xl py-4 tracking-wider'>FunZone has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit and coming at the top of the leaderboard. And don't forget we have a special easter egg waiting especially for the Cyber Security enthusiast peeps.</p>
+                    <h1 className='text-3xl md:text-6xl'>Geolocation</h1>
+                    <p className='text-xl md:text-2xl py-4 tracking-wider'>Explain about Geolocation</p>
+                    <Link to="/geolocation">
+                        <button className='bg-blue-600 text-white py-2 px-8 rounded-md text-xl md:text-2xl'>Geolocation</button>
+                    </Link>
                 </div>
+            </div>
+
+
+            <div className='md:grid md:grid-cols-2 items-center pt-16'>
+
+                <div className=''>
+                    <h1 className='text-3xl md:text-6xl'>What else do <span className='text-blue-600 cursor-pointer' onDoubleClick={() => setShowCode(true)}>we</span> have</h1>
+                    <p className='text-xl md:text-2xl py-4 tracking-wider text-justify'>FunZone has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit and coming at the top of the leaderboard. And don't forget we have a special easter egg waiting especially for the Cyber Security enthusiast peeps.</p>
+                </div>
+
+                <div className="grid place-items-center py-4 drop-shadow-3xl shadow-black">
+                    <img src={InspirationImg} alt="img" width="500" height="500" />
+                </div>
+
             </div>
 
         </div>
