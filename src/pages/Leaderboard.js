@@ -12,7 +12,7 @@ export default function Leaderboard() {
                     <p className='text-xl md:text-2xl py-4 tracking-wider'>Find all hidden clues and top the leaderboard</p>
                     <ol className='list-decimal text-xl md:text-2xl'>
                         <li>Aakash Gupta</li>
-                        <li>Aditya Mittal</li>
+                        <li>Aakash Gupta</li>
                         <li>Harshal Raikwar</li>
                     </ol>
                 </div>
