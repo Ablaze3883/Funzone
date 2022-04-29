@@ -158,7 +158,7 @@ export default function MystryRoom() {
                 </div>
 
                 <div className="grid place-items-center text-xl py-2 gap-2 mx-2 w-full mb-4">
-                  <p className=''>Fill up the input with the name of objects in he room by solving th riddles</p>
+                  <p className=''>Fill up the input with the name of objects in the room by solving th riddles</p>
 
                   Total points: {counter}
 
@@ -221,13 +221,10 @@ export default function MystryRoom() {
           View in AR
         </h1>
         <div className="mt-2 hover-target grid place-items-center invisible group-hover:visible bg-white rounded-lg w-96">
-          <p className="self-center mx-8 text-xl tracking-wide text-justify pt-2">To view the 3D model in AR, scan the QR code or click on the button below.</p>
+          <p className="self-center mx-8 text-xl tracking-wide text-justify pt-2">To view the 3D model in AR, scan the QR code.</p>
 
-          <div className="grid justify-center grid-cols-1 gap-2 mx-8 md:grid-cols-2">
-            <img className="flex p-2 text-6xl rounded-xl h-40 w-40" src="https://storage.echo3d.co/morning-hill-2019/ef8b7d4c-4468-40d0-aab6-8a4ef7bf1df7.png" alt="QR Code" />
-            <a href="https://go.echo3d.co/S3Xc" target="_blank" rel="noreferrer">
-              <button className="px-8 ml-8 text-lg font-semibold tracking-wider text-white border rounded-full shadow-sm mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-purple-500 to-pink-500  hover:shadow-lg">View in AR</button>
-            </a>
+          <div className="grid justify-center">
+            <img className="flex p-2 text-6xl rounded-xl h-56 w-56" src="https://storage.echo3d.co/morning-hill-2019/ef8b7d4c-4468-40d0-aab6-8a4ef7bf1df7.png" alt="QR Code" />
           </div>
         </div>
       </div>
