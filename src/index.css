@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +10,8 @@
 }
 
 body {
-  font-family: "Quintessential", cursive;
-  background-color: #191a19;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f1f8f1;
 }
 
 input:focus-within ~ label {

@@ -7,7 +7,7 @@ module.exports = {
         primary: '#191A19',
         secondary: '#1E5128',
         tertiary: '#4E9F3D',
-        fontColor: '#D8E9A8',
+        fontColor: '#000080',
       },
       zIndex: {
         "-1": "-1",
@@ -17,10 +17,6 @@ module.exports = {
         '256': '80rem',
       },
     },
-    fontFamily: {
-      'montserrat': ['Montserrat'],
-      'loki': ['Loki-Regular']
-    }
   },
   variants: {
     borderColor: ['responsive', 'hover', 'focus', 'focus-within'],

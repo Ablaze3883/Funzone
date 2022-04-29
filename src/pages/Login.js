@@ -51,9 +51,9 @@ function LogIn() {
                         </div>
 
                         <div className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 cursor-pointer shadow-lg">
-                            <div className="flex items-center justify-center bg-white">
+                            <div className="flex items-center justify-center bg-white" onClick={signInWithGoogle}>
                                 <img src={GoogleLogo} alt="google" className="bg-white w-4" />
-                                <span className="bg-white ml-4" onClick={signInWithGoogle}>Sign in with Google</span>
+                                <span className="bg-white ml-4">Sign in with Google</span>
                             </div>
                         </div>
 

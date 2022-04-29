@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
 import { HiX } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import HeroImg from '../assets/hero.svg';
-import InspirationImg from '../assets/inspiration.svg';
+import HeroImg from '../assets/second.svg';
+import InspirationImg from '../assets/first.svg';
 
 export default function Home() {
 
@@ -102,7 +102,7 @@ export default function Home() {
             <div className='md:grid md:grid-cols-2 items-center pt-16'>
 
                 <div className="grid place-items-center py-4 drop-shadow-3xl shadow-black">
-                    <img src={InspirationImg} alt="img" width="600" height="600" />
+                    <img src={InspirationImg} alt="img" width="400" height="400" />
                 </div>
 
                 <div className=''>
