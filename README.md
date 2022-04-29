@@ -1,13 +1,13 @@
-# DarkRoom 
+# FunZone 
 
 ## 💡 Inspiration
 
 Do you love puzzles or treasure hunts? or pharaohs you are a big fan of Jigsaw and Escape Room movies? We have something for you!
-Due to COVID'19, we are not able to go out due to some restrictions and we want to play games that are fun and let you explore them. Therefore we have created a game called DarkRoom. Here you can enter into the world of 3D puzzles and try to solve them by finding out the objects present there.
+Due to COVID'19, we are not able to go out due to some restrictions and we want to play games that are fun and let you explore them. Therefore we have created a game called FunZone. Here you can enter into the world of 3D puzzles and try to solve them by finding out the objects present there.
 
 ## 💻 What it does
 
-DarkRoom is a web application that allows you to enter into the 3D world of the game Escape Room. Here users need to enter the room and see the 3D world of the game. The user can also interact with the 3D world and need to find the exit with the correct combination of the keys provided by the game by decoding the riddles. The app has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit and coming at the top of the leaderboard.
+FunZone is a web application that allows you to enter into the 3D world of the game Escape Room. Here users need to enter the room and see the 3D world of the game. The user can also interact with the 3D world and need to find the exit with the correct combination of the keys provided by the game by decoding the riddles. The app has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit and coming at the top of the leaderboard.
 
 ## ⚙️ How we built it
 
@@ -53,7 +53,7 @@ Any domain name with .tech, eg longitude. tech. We will choose the best domain n
 - Rendering 3D models with the help of Three.js.
 - Building an Augmented Reality experience.
 
-## 🚀 What's next for DarkRoom
+## 🚀 What's next for FunZone
 
 - Adding more house/escape room puzzles.
 - Adding real-time multiplayer.
