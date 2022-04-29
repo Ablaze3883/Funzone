@@ -115,6 +115,44 @@ export default function MystryRoom() {
     }
   }
 
+      // For Quest3
+
+      const refQuest3 = useRef(null);
+      const [messageQuest3, setMessageQuest3] = useState("");
+      const [validQuest3, setValidQuest3] = useState(false);
+  
+      const getInputValueQuest3 = (e) => {
+          e.preventDefault();
+          const userValueQuest3 = refQuest3.current.value;
+          if (userValueQuest3 === "Piano") {
+              setValidQuest3(true);
+              setMessageQuest3("You got the right answer!");
+              setCounter(counter + 250);
+          } else {
+              setValidQuest3(false);
+              setMessageQuest3("Wrong answer! Try again!");
+          }
+      }
+  
+      // For Quest 4
+  
+      const refQuest4 = useRef(null);
+      const [messageQuest4, setMessageQuest4] = useState("");
+      const [validQuest4, setValidQuest4] = useState(false);
+  
+      const getInputValueQuest4 = (e) => {
+          e.preventDefault();
+          const userValueQuest4 = refQuest4.current.value;
+          if(userValueQuest4 === "Stairs") {
+          setValidQuest4(true);
+              setMessageQuest4("You got the right answer!");
+              setCounter(counter + 250);
+          } else {
+              setValidQuest4(false);
+              setMessageQuest4("Wrong answer! Try again!");
+          }
+      }
+
   return (
     <div className="">
 
@@ -185,24 +223,24 @@ export default function MystryRoom() {
                     </div>
 
                     <div className="mt-4 outline-transparent outline flex flex-row place-items-center mx-12">
-                      <p className="">It is all in black and white, I move with sound and might, The key is sing on sight, The prize here does alight</p>
-                      <input placeholder="Type the code here" type="text" className="block w-56 pb-2 text-lg text-gray-200 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
+                      <p className="">It is all in black and white, I move with sound and might, The key is sing on sight, The price where does a light</p>
+                      <input ref={refQuest3} onChange={getInputValueQuest3} placeholder="Type the code here" type="text" className="block w-56 pb-2 text-lg text-gray-200 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
                     </div>
-                    {/* <div className='text-center'>
-                      {messageDesk && <div>
-                        <p className={validDesk ? "text-green-500 " : "text-red-400"} >{messageDesk}</p>
+                    <div className='text-center'>
+                      {messageQuest3 && <div>
+                        <p className={validQuest3 ? "text-green-500 " : "text-red-400"} >{messageQuest3}</p>
                       </div>}
-                    </div> */}
+                    </div>
 
                     <div className="mt-4 outline-transparent outline flex flex-row place-items-center mx-12">
                       <p className="">Go through the place, That hosts the chairs. The prize is hidden, On the…?????</p>
-                      <input placeholder="Type the code here" type="text" className="block w-56 pb-2 text-lg text-gray-200 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
+                      <input ref={refQuest4} onChange={getInputValueQuest4} placeholder="Type the code here" type="text" className="block w-56 pb-2 text-lg text-gray-200 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
                     </div>
-                    {/* <div className='text-center'>
-                      {messageDesk && <div>
-                        <p className={validDesk ? "text-green-500 " : "text-red-400"} >{messageDesk}</p>
+                    <div className='text-center'>
+                      {messageQuest4 && <div>
+                        <p className={validQuest4 ? "text-green-500 " : "text-red-400"} >{messageQuest4}</p>
                       </div>}
-                    </div> */}
+                    </div>
 
 
                   </div>
