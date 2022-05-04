@@ -115,43 +115,43 @@ export default function MystryRoom() {
     }
   }
 
-      // For Quest3
+  // For Quest3
 
-      const refQuest3 = useRef(null);
-      const [messageQuest3, setMessageQuest3] = useState("");
-      const [validQuest3, setValidQuest3] = useState(false);
-  
-      const getInputValueQuest3 = (e) => {
-          e.preventDefault();
-          const userValueQuest3 = refQuest3.current.value;
-          if (userValueQuest3 === "Piano") {
-              setValidQuest3(true);
-              setMessageQuest3("You got the right answer!");
-              setCounter(counter + 250);
-          } else {
-              setValidQuest3(false);
-              setMessageQuest3("Wrong answer! Try again!");
-          }
-      }
-  
-      // For Quest 4
-  
-      const refQuest4 = useRef(null);
-      const [messageQuest4, setMessageQuest4] = useState("");
-      const [validQuest4, setValidQuest4] = useState(false);
-  
-      const getInputValueQuest4 = (e) => {
-          e.preventDefault();
-          const userValueQuest4 = refQuest4.current.value;
-          if(userValueQuest4 === "Stairs") {
-          setValidQuest4(true);
-              setMessageQuest4("You got the right answer!");
-              setCounter(counter + 250);
-          } else {
-              setValidQuest4(false);
-              setMessageQuest4("Wrong answer! Try again!");
-          }
-      }
+  const refQuest3 = useRef(null);
+  const [messageQuest3, setMessageQuest3] = useState("");
+  const [validQuest3, setValidQuest3] = useState(false);
+
+  const getInputValueQuest3 = (e) => {
+    e.preventDefault();
+    const userValueQuest3 = refQuest3.current.value;
+    if (userValueQuest3 === "Piano") {
+      setValidQuest3(true);
+      setMessageQuest3("You got the right answer!");
+      setCounter(counter + 250);
+    } else {
+      setValidQuest3(false);
+      setMessageQuest3("Wrong answer! Try again!");
+    }
+  }
+
+  // For Quest 4
+
+  const refQuest4 = useRef(null);
+  const [messageQuest4, setMessageQuest4] = useState("");
+  const [validQuest4, setValidQuest4] = useState(false);
+
+  const getInputValueQuest4 = (e) => {
+    e.preventDefault();
+    const userValueQuest4 = refQuest4.current.value;
+    if (userValueQuest4 === "Stairs") {
+      setValidQuest4(true);
+      setMessageQuest4("You got the right answer!");
+      setCounter(counter + 250);
+    } else {
+      setValidQuest4(false);
+      setMessageQuest4("Wrong answer! Try again!");
+    }
+  }
 
   return (
     <div className="">
