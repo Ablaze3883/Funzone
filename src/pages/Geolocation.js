@@ -95,11 +95,11 @@ export default function Geolocation() {
         <div className='tracking-wider'>
 
             <div className='grid place-items-center pt-8' >
-                <h1 className='text-fontColor text-6xl' > Answer these questions </h1>
+                <h1 className='text-fontColor text-6xl' > Answer these ques.tions </h1>
                 <div className='mt-2 h-1.5 w-[26rem] bg-primary' > </div>
                 <div className='py-2 text-2xl' >
                     <p> Open the given link and search
-                        for the geolocation puzzle cubes present at the 4 different SRM sites <br />
+                        for the geolocation balls present at the 4 different SRM sites <br />
                     </p>
                 </div >
             </div>
