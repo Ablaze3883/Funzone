@@ -99,7 +99,7 @@ export default function Geolocation() {
                 <div className='mt-2 h-1.5 w-[26rem] bg-primary' > </div>
                 <div className='py-2 text-2xl' >
                     <p> Open the given link and search
-                        for the geolocation balls present at the 4 different SRM sites <br />
+                        for the geolocation puzzle cubes present at the 4 different SRM sites <br />
                     </p>
                 </div >
             </div>
