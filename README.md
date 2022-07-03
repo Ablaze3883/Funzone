@@ -1,9 +1,11 @@
-<!-- $ecret: A11i5W3LL
+<!-- 
+$ecret: A11i5W3LL
 Mystery Room:
 - Globe
 - Desk
 - Piano
-- Stairs -->
+- Stairs 
+-->
 
 
 # FunZone 
@@ -15,4 +17,9 @@ Due to COVID'19, we are not able to go out due to some restrictions and we want 
 
 ## 💻 What it does
 
-FunZone is a web application that allows you to enter into the AR 3D world of the game Escape Room. Here users need to enter the room and see the 3D world of the game. The user can also interact with the 3D world and need to find the exit with the correct combination of the keys provided by the game by decoding the riddles. The app has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit.
+FunZone is a web application that allows you to enter into the AR 3D world of the game Escape Room. Here users need to enter the room and see the 3D world of the game. The user can also interact with the 3D world and need to find the exit with the correct combination of the keys provided by the game by decoding the riddles. The app has tons of easter eggs and fun features. Unlock the secret parts of the game by solving the riddles and finding the exit .
+
+## 🔎 Scope of the Project
+
+We intended to add more games puzzles and secrets including but not limited to virtual Reality Escape Room , AR interactive Puzzle, Mixed Reality games but due to technical issues and time constrains was unable to implement the aforementioned games and puzzles 
+

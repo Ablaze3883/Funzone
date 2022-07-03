@@ -91,155 +91,72 @@ export default function Geolocation() {
         setDropDown(!dropdown);
     };
 
-    return ( <
-        div className = 'tracking-wider' >
+    return (
+        <div className='tracking-wider'>
 
-        <
-        div className = 'grid place-items-center pt-8' >
-        <
-        h1 className = 'text-fontColor text-6xl' > Answer these questions < /h1> <
-        div className = 'mt-2 h-1.5 w-[26rem] bg-primary' > < /div> <
-        div className = 'py-2 text-2xl' >
-        <
-        p > Open the given link and search
-        for the geolocation balls present at the 4 different SRM sites < br / >
-        <
-        /p> 
+            <div className='grid place-items-center pt-8' >
+                <h1 className='text-fontColor text-6xl' > Answer these ques.tions </h1>
+                <div className='mt-2 h-1.5 w-[26rem] bg-primary' > </div>
+                <div className='py-2 text-2xl' >
+                    <p> Open the given link and search
+                        for the geolocation balls present at the 4 different SRM sites <br />
+                    </p>
+                </div >
+            </div>
 
+            <div className='grid place-items-center py-4' >
+                <a href='https://ablaze3883.github.io/funzonegeolocskpb8c/'
+                    target="_blank"
+                    className="text-2xl text-blue-500"> https: //ablaze3883.github.io/funzonegeolocskpb8c/</a></div>
 
-        <
-        /
-        div > <
-        /div>
+            <div className='md:grid md:grid-cols-2 items-center pt-4' >
 
-        <
-        div className = 'grid place-items-center py-4' >
-        <
-        a href = 'https://ablaze3883.github.io/funzonegeolocskpb8c/'
-        target = "_blank"
-        className = "text-2xl text-blue-500" > https: //ablaze3883.github.io/funzonegeolocskpb8c/</a></div>
+                <div className='grid grid-cols-1 place-items-center space-y-4 py-4' >
+                    <p className="text-3xl text-center" > The Building in around you is ? </p>
+                    <input ref={refQuest1} onChange={getInputValueQuest1} placeholder="Type the code here" type="text" className="block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" /> {messageQuest1 && < div >
+                        <p className={validQuest1 ? "text-green-500 text-xl" : "text-red-400 text-xl"} > {messageQuest1} </p>
+                    </div>
+                    }
+                </div>
 
-        <
-        div className = 'md:grid md:grid-cols-2 items-center pt-4' >
+                <div className='grid grid-cols-1 place-items-center space-y-4 py-4' >
+                    <p className="text-3xl text-center" > The Building in around you is ? </p>
+                    <input ref={refQuest2} onChange={getInputValueQuest2} placeholder="Type the code here" type="text" className="block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" /> {messageQuest2 && < div >
+                        <p className={validQuest2 ? "text-green-500 text-xl" : "text-red-400 text-xl"}> {messageQuest2} </p>
+                    </div>}
+                </div>
+                <div className='grid grid-cols-1 place-items-center space-y-4 py-4' >
+                    <p className="text-3xl text-center" > The Building in around you is ? </p>
+                    <input ref={refQuest3} onChange={getInputValueQuest3} placeholder="Type the code here" type="text" className="block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
+                    {messageQuest3 &&
+                        <div>
+                            <p className={validQuest3 ? "text-green-500 text-xl" : "text-red-400 text-xl"} >
+                                {messageQuest3} </p>
+                        </div>
+                    }
+                </div>
 
-        <
-        div className = 'grid grid-cols-1 place-items-center space-y-4 py-4' >
-        <
-        p className = "text-3xl text-center" > The Building in around you is ? < /p>  <
-        input ref = {
-            refQuest1
-        }
-        onChange = {
-            getInputValueQuest1
-        }
-        placeholder = "Type the code here"
-        type = "text"
-        className = "block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" / > {
-            messageQuest1 && < div >
-            <
-            p className = {
-                validQuest1 ? "text-green-500 text-xl" : "text-red-400 text-xl"
-            } > {
-                messageQuest1
-            } < /p> < /
-            div >
-        } <
-        /div>
+                <div className='grid grid-cols-1 place-items-center space-y-4 py-4' >
+                    <p className="text-3xl text-center" > The Building in around you is ? </p>
+                    <input ref={refQuest4} onChange={getInputValueQuest4} placeholder="Type the code here" type="text" className="block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" />
+                    {messageQuest4 &&
+                        <div>
+                            <p className={validQuest4 ? "text-green-500 text-xl" : "text-red-400 text-xl"}> {messageQuest4} </p>
+                        </div>
+                    }
+                </div>
+            </div>
+            {counter > 250 ? <div className="grid place-items-center text-4xl my-6" > Congratulations!!you scored {counter} points finding the geolocation balls. </div> : null}
 
-        <
-        div className = 'grid grid-cols-1 place-items-center space-y-4 py-4' >
-        <
-        p className = "text-3xl text-center" > The Building in around you is ? < /p>  <
-        input ref = {
-            refQuest2
-        }
-        onChange = {
-            getInputValueQuest2
-        }
-        placeholder = "Type the code here"
-        type = "text"
-        className = "block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" / > {
-            messageQuest2 && < div >
-            <
-            p className = {
-                validQuest2 ? "text-green-500 text-xl" : "text-red-400 text-xl"
-            } > {
-                messageQuest2
-            } < /p> < /
-            div >
-        } <
-        /div>
+            {
+                /* <div className='grid place-items-center pb-12'>
+                                <button className='bg-blue-600 text-white py-2 px-8 rounded-md text-xl md:text-2xl' onClick={handleCLick}>Achievement</button>
+                                {dropdown && (
+                                    <div className="py-2 text-lg">Congratulations!! you traveled around 1 Kilometer finding the geolocation balls .</div>
+                                )}
+                            </div> */
+            }
 
-        <
-        div className = 'grid grid-cols-1 place-items-center space-y-4 py-4' >
-        <
-        p className = "text-3xl text-center" > The Building in around you is ? < /p>  <
-        input ref = {
-            refQuest3
-        }
-        onChange = {
-            getInputValueQuest3
-        }
-        placeholder = "Type the code here"
-        type = "text"
-        className = "block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" / > {
-            messageQuest3 && < div >
-            <
-            p className = {
-                validQuest3 ? "text-green-500 text-xl" : "text-red-400 text-xl"
-            } > {
-                messageQuest3
-            } < /p> < /
-            div >
-        } <
-        /div>
-
-        <
-        div className = 'grid grid-cols-1 place-items-center space-y-4 py-4' >
-        <
-        p className = "text-3xl text-center" > The Building in around you is ? < /p>  <
-        input ref = {
-            refQuest4
-        }
-        onChange = {
-            getInputValueQuest4
-        }
-        placeholder = "Type the code here"
-        type = "text"
-        className = "block w-56 pb-1 text-xl placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none text-center" / > {
-            messageQuest4 && < div >
-            <
-            p className = {
-                validQuest4 ? "text-green-500 text-xl" : "text-red-400 text-xl"
-            } > {
-                messageQuest4
-            } < /p> < /
-            div >
-        } <
-        /div>
-
-        <
-        /div>
-
-        {
-            counter > 250 ?
-                <
-                div className = "grid place-items-center text-4xl my-6" > Congratulations!!you scored {
-                    counter
-                }
-            points finding the geolocation balls. < /div>: null
-        }
-
-        {
-            /* <div className='grid place-items-center pb-12'>
-                            <button className='bg-blue-600 text-white py-2 px-8 rounded-md text-xl md:text-2xl' onClick={handleCLick}>Achievement</button>
-                            {dropdown && (
-                                <div className="py-2 text-lg">Congratulations!! you traveled around 1 Kilometer finding the geolocation balls .</div>
-                            )}
-                        </div> */
-        }
-
-        <
-        /div>
+        </div>
     )
 }
