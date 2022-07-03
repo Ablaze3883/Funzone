@@ -22,3 +22,4 @@ FunZone is a web application that allows you to enter into the AR 3D world of th
 ## 🔎 Scope of the Project
 
 We intended to add more games puzzles and secrets including but not limited to virtual Reality Escape Room , AR interactive Puzzle, Mixed Reality games but due to technical issues and time constrains was unable to implement the aforementioned games and puzzles 
+
